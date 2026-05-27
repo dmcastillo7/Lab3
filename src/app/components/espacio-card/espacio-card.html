@@ -1,0 +1,17 @@
+<div class="card" [class.no-disponible]="!espacio.disponible">
+    <img [src]="espacio.imagen" [alt]="espacio.nombre">
+    <h3>{{ espacio.nombre }}</h3>
+    <p><strong>Tipo: </strong>{{ espacio.tipo }}</p>
+    <p><strong>Capacidad: </strong>{{ espacio.capacidad }}</p>
+    @if(espacio.capacidad > 50){
+        <p class="alta-capacidad">Espacio de alta capacidad</p>
+    }
+    <p><strong>Ubicación: </strong>{{ espacio.ubicacion }}</p>
+    @if(espacio.disponible){
+        <p class="disponible">Disponible</p>
+        <button (click)="seleccionar()">Reservar</button>
+    } @else {
+        <p class="ocupado">No disponible</p>
+        <button disabled>No disponible</button>
+    }
+</div>

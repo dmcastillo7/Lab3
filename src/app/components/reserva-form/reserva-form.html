@@ -1,0 +1,17 @@
+<div class="formulario">
+    <h2>Registrar reserva</h2>
+    <p>
+        <strong>Espacio seleccionado: </strong> {{espacio.nombre}}
+    </p>
+    <label>Responsable:</label>
+    <input type="text" [(ngModel)]="responsable">
+    <label>Fecha:</label>
+    <input type="date" [(ngModel)]="fecha">
+    <label>Hora:</label>
+    <input type="time" [(ngModel)]="hora">
+    <label>Carrera solicitante:</label>
+    <input type="text" [(ngModel)]="carrera">
+
+    <button (click)="guardarReserva()">Guardar Reserva</button>
+    <button (click)="limpiarFormulario()">Limpiar formulario</button>
+</div>

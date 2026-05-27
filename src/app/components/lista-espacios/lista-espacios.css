@@ -1,0 +1,12 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 16px;
+    justify-content: center;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,14 @@
+.principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.principal h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #4a90d9;
+    padding-bottom: 12px;
+}
